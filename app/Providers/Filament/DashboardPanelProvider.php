@@ -6,7 +6,6 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
-use Filament\Navigation\NavigationGroup;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -70,12 +69,7 @@ class DashboardPanelProvider extends PanelProvider
                         force: false, // force the user to enable 2FA before they can use the application (default = false)
                     )
             )
-            ->navigationGroups([
-                NavigationGroup::make()
-                    ->label('Blog'),
-                NavigationGroup::make()
-                    ->label('Settings')
-                    ->collapsed(),
-            ]);
+
+            ->unsavedChangesAlerts();
     }
 }

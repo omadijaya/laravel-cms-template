@@ -2,7 +2,7 @@
 
 return [
 
-    'label' => 'Post',
+    'label' => 'Artikel',
 
     'form' => [
         'title' => 'Judul',
