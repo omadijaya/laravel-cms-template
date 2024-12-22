@@ -2,7 +2,7 @@
 
 namespace App\Providers\Filament;
 
-use App\Filament\Plugins\Resources\MenuResource;
+use App\Filament\Resources\MenuResource;
 use Datlechin\FilamentMenuBuilder\FilamentMenuBuilderPlugin;
 use Datlechin\FilamentMenuBuilder\MenuPanel\ModelMenuPanel;
 use Filament\Http\Middleware\Authenticate;

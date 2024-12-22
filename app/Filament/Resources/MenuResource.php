@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Plugins\Resources;
+namespace App\Filament\Resources;
 
 use Datlechin\FilamentMenuBuilder\Resources\MenuResource as BaseMenuResource;
 
