@@ -9,6 +9,7 @@
         "php": "^8.2",
         "blendbyte/filament-title-with-slug": "^1.0",
         "codewithdennis/filament-select-tree": "^3.1",
+        "datlechin/filament-menu-builder": "^0.6.0",
         "filament/filament": "^3.2",
         "filament/spatie-laravel-media-library-plugin": "^3.2",
         "filament/spatie-laravel-settings-plugin": "^3.2",

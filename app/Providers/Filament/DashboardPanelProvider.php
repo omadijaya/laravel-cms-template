@@ -2,6 +2,9 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Plugins\Resources\MenuResource;
+use Datlechin\FilamentMenuBuilder\FilamentMenuBuilderPlugin;
+use Datlechin\FilamentMenuBuilder\MenuPanel\ModelMenuPanel;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -67,9 +70,23 @@ class DashboardPanelProvider extends PanelProvider
                     )
                     ->enableTwoFactorAuthentication(
                         force: false, // force the user to enable 2FA before they can use the application (default = false)
-                    )
+                    ),
             )
-
+            ->plugin(
+                FilamentMenuBuilderPlugin::make()
+                    ->usingResource(MenuResource::class)
+                    ->addLocations([
+                        'header' => 'Header',
+                        'footer' => 'Footer',
+                    ])->addMenuPanels([
+                        ModelMenuPanel::make()
+                            ->model(\App\Models\Categories::class),
+                        ModelMenuPanel::make()
+                            ->model(\App\Models\Page::class),
+                        // ModelMenuPanel::make()
+                        //     ->model(\App\Models\Post::class),
+                    ]),
+            )
             ->unsavedChangesAlerts();
     }
 }

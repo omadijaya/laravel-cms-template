@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Datlechin\FilamentMenuBuilder\Concerns\HasMenuPanel;
+use Datlechin\FilamentMenuBuilder\Contracts\MenuPanelable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use RalphJSmit\Laravel\SEO\Support\HasSEO;
@@ -11,9 +13,9 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 use Spatie\Tags\HasTags;
 
-class Post extends Model implements HasMedia
+class Post extends Model implements HasMedia, MenuPanelable
 {
-    use HasSEO, HasSlug, HasTags, InteractsWithMedia, SoftDeletes;
+    use HasMenuPanel, HasSEO, HasSlug, HasTags, InteractsWithMedia, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -30,11 +32,6 @@ class Post extends Model implements HasMedia
 
     ];
 
-    // protected $casts = [
-    //     'categories' => 'array',
-    //     'tags' => 'array',
-    // ];
-
     /**
      * Get the options for generating the slug.
      */
@@ -48,5 +45,15 @@ class Post extends Model implements HasMedia
     public function categories()
     {
         return $this->belongsToMany(Categories::class, 'post_categories', 'post_id', 'category_id');
+    }
+
+    public function getMenuPanelTitleColumn(): string
+    {
+        return 'title';
+    }
+
+    public function getMenuPanelUrlUsing(): callable
+    {
+        return fn (self $model) => route('fe.post', $model->slug);
     }
 }
