@@ -21,6 +21,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Jeffgreco13\FilamentBreezy\BreezyCore;
+use TomatoPHP\FilamentLanguageSwitcher\FilamentLanguageSwitcherPlugin;
 
 class DashboardPanelProvider extends PanelProvider
 {
@@ -87,6 +88,7 @@ class DashboardPanelProvider extends PanelProvider
                         //     ->model(\App\Models\Post::class),
                     ]),
             )
+            ->plugin(FilamentLanguageSwitcherPlugin::make())
             ->unsavedChangesAlerts();
     }
 }

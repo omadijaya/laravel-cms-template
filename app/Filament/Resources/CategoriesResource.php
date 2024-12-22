@@ -22,7 +22,9 @@ class CategoriesResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $navigationParentItem = 'Artikel';
+    protected static ?int $navigationSort = 4;
+
+    // protected static ?string $navigationParentItem = 'Artikel';
 
     public static function form(Form $form): Form
     {
