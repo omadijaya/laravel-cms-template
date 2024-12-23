@@ -32,6 +32,11 @@ class Post extends Model implements HasMedia, MenuPanelable
 
     ];
 
+    protected $casts = [
+        'is_published' => 'boolean',
+        'published_at' => 'datetime',
+    ];
+
     /**
      * Get the options for generating the slug.
      */
@@ -55,5 +60,10 @@ class Post extends Model implements HasMedia, MenuPanelable
     public function getMenuPanelUrlUsing(): callable
     {
         return fn (self $model) => route('fe.post', $model->slug);
+    }
+
+    public function author()
+    {
+        return $this->belongsTo(User::class, 'author_id');
     }
 }

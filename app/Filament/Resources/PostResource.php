@@ -14,6 +14,7 @@ use Filament\Forms\Components\SpatieTagsInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\TagsColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -95,13 +96,22 @@ class PostResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->label(__('resources/post.form.title'))
+                    ->color('primary')
                     ->searchable()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('author.name')
+                    ->label(__('resources/post.form.author'))
+                    ->sortable(),
+                TagsColumn::make('categories.title')
+                    ->separator(',')
+                    ->label(__('resources/post.form.categories')),
                 Tables\Columns\BooleanColumn::make('is_published')
-                    ->label(__('resources/post.form.is_published'))
+                    ->label('Status')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('published_at')
-                    ->dateTime()
+                    ->label(__('resources/post.form.published_at'))
+                    ->description(fn ($record): string => $record->published_at?->diffForHumans() ?? null)
+                    ->datetime()
                     ->sortable(),
             ])
             ->filters([

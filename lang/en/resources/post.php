@@ -18,6 +18,7 @@ return [
         'featured_image' => 'Featured Image',
         'featured_image_help_text' => 'The image will be used as the main image of the page.',
         'categories' => 'Categories',
+        'author' => 'Author',
     ],
 
     'settings_label' => 'Page Settings',

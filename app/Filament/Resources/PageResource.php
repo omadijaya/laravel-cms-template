@@ -86,13 +86,19 @@ class PageResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->label(__('resources/page.form.title'))
+                    ->color('primary')
                     ->searchable()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('author.name')
+                    ->label(__('resources/post.form.author'))
+                    ->sortable(),
                 Tables\Columns\BooleanColumn::make('is_published')
-                    ->label(__('resources/page.form.is_published'))
+                    ->label('Status')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('published_at')
-                    ->dateTime()
+                    ->label(__('resources/post.form.published_at'))
+                    ->description(fn ($record): string => $record->published_at?->diffForHumans() ?? null)
+                    ->datetime()
                     ->sortable(),
             ])
             ->filters([

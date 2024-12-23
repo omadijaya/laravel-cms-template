@@ -17,6 +17,7 @@ return [
         'published_at' => 'Dipublikasikan pada',
         'featured_image' => 'Gambar Unggulan',
         'featured_image_help_text' => 'Gambar ini akan digunakan sebagai gambar utama halaman.',
+        'author' => 'Penulis',
     ],
 
     'settings_label' => 'Pengaturan Halaman',

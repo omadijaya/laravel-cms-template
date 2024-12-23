@@ -17,6 +17,7 @@ return [
         'published_at' => 'Published At',
         'featured_image' => 'Featured Image',
         'featured_image_help_text' => 'The image will be used as the main image of the page.',
+        'author' => 'Author',
     ],
 
     'settings_label' => 'Page Settings',
