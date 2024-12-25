@@ -144,4 +144,9 @@ class PageResource extends Resource
     {
         return __('resources/page.label');
     }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return __('nav.blog');
+    }
 }

@@ -3,6 +3,7 @@
 namespace App\Filament\Pages;
 
 use App\Settings\GeneralSettings;
+use BezhanSalleh\FilamentShield\Traits\HasPageShield;
 use Filament\Forms;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Repeater;
@@ -15,6 +16,8 @@ use Filament\Pages\SettingsPage;
 
 class Settings extends SettingsPage
 {
+    use HasPageShield;
+
     protected static ?string $navigationIcon = 'heroicon-o-cog-6-tooth';
 
     protected static ?int $navigationSort = 99;
@@ -82,5 +85,15 @@ class Settings extends SettingsPage
                     ->activeTab(1),
 
             ])->columns(1);
+    }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return __('nav.settings');
+    }
+
+    protected function getShieldRedirectPath(): string
+    {
+        return '/'; // redirect to the root index...
     }
 }

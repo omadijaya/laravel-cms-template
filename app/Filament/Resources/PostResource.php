@@ -157,4 +157,9 @@ class PostResource extends Resource
     {
         return __('resources/post.label');
     }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return __('nav.blog');
+    }
 }

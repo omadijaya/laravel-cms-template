@@ -88,6 +88,14 @@ class DashboardPanelProvider extends PanelProvider
                     ]),
             )
             ->plugin(FilamentLanguageSwitcherPlugin::make())
-            ->unsavedChangesAlerts();
+            ->plugins([
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+            ])
+            ->unsavedChangesAlerts()
+            ->navigationGroups([
+                __('nav.blog'),
+                __('filament-shield::filament-shield.nav.group'),
+                __('nav.settings'),
+            ]);
     }
 }

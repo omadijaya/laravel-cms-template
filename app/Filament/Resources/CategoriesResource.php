@@ -120,4 +120,9 @@ class CategoriesResource extends Resource
     {
         return __('resources/categories.label');
     }
+
+    public static function getNavigationGroup(): ?string
+    {
+        return __('nav.blog');
+    }
 }
