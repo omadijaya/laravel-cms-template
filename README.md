@@ -87,7 +87,20 @@ This repository is a very opinionated CMS starter template based on my personal 
     php artisan migrate
     ```
 
-10. **Start the Development Server**: Serve the application locally:
+10. **Generate Filament User**: Create a new Filament user:
+    ```sh
+    php artisan make:filament-user
+    ```
+
+11. **Run Filament Shield Command**: Set up Filament Shield:
+    ```sh
+    php artisan shield:install dashboard
+    php artisan shield:generate --panel=dashboard
+    php artisan shield:super-admin
+    ```
+    to access all resources, you might need to update the super admin roles.
+
+12. **Start the Development Server**: Serve the application locally:
     ```sh
     php artisan serve
     ```

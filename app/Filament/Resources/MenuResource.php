@@ -2,11 +2,12 @@
 
 namespace App\Filament\Resources;
 
+use BezhanSalleh\FilamentShield\Traits\HasPageShield;
 use Datlechin\FilamentMenuBuilder\Resources\MenuResource as BaseMenuResource;
 
 class MenuResource extends BaseMenuResource
 {
-    // protected static ?string $navigationGroup = 'Navigation';
+    use HasPageShield;
 
     protected static ?int $navigationSort = 6;
 
