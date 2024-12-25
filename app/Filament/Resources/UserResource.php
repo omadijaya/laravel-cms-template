@@ -103,6 +103,11 @@ class UserResource extends Resource
             ]);
     }
 
+    public static function getModelLabel(): string
+    {
+        return __('resources/user.label');
+    }
+
     public static function getNavigationGroup(): ?string
     {
         return __('filament-shield::filament-shield.nav.group') ?? 'User Management';
