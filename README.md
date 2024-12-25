@@ -2,45 +2,11 @@
 
 This repository is a very opinionated CMS starter template based on my personal preferences, using Laravel and Filament. It provides a robust foundation for building content management systems with ease and efficiency.
 
+
 ## How to Use This Template
 
-1. **Use the Template**: Click the "Use this template" button on the GitHub repository page to create a new repository based on this template.
+Click the "Use this template" button on the GitHub repository page to create a new repository based on this template.
 
-2. **Clone the Repository**: Clone the newly created repository to your local machine using the following command:
-    ```sh
-    git clone https://github.com/your-username/your-new-repo-name.git
-    ```
-
-3. **Navigate to the Project Directory**: Move into the project directory:
-    ```sh
-    cd your-new-repo-name
-    ```
-
-4. **Install Dependencies**: Install the required dependencies using Composer and NPM:
-    ```sh
-    composer install
-    npm install
-    ```
-
-5. **Set Up Environment Variables**: Copy the `.env.example` file to `.env` and configure your environment variables:
-    ```sh
-    cp .env.example .env
-    ```
-
-6. **Generate Application Key**: Generate a new application key:
-    ```sh
-    php artisan key:generate
-    ```
-
-7. **Run Migrations**: Run the database migrations to set up the database schema:
-    ```sh
-    php artisan migrate
-    ```
-
-8. **Serve the Application**: Start the local development server:
-    ```sh
-    php artisan serve
-    ```
 
 ## Installation Instructions for Local Development
 
