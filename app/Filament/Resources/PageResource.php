@@ -8,6 +8,7 @@ use Camya\Filament\Forms\Components\TitleWithSlugInput;
 use Filament\Forms;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -69,6 +70,14 @@ class PageResource extends Resource
                             ])->columnSpan(2),
                         Section::make(__('resources/page.settings_label'))
                             ->schema([
+                                Select::make('parent_id')
+                                    ->relationship(
+                                        name: 'parent',
+                                        titleAttribute: 'title',
+                                        ignoreRecord: true,
+                                        modifyQueryUsing: fn (Builder $query) => $query->whereNull('parent_id'),
+                                    )
+                                    ->label(__('resources/page.form.parent_page')),
                                 Forms\Components\Toggle::make('is_published')
                                     ->label(__('resources/page.form.is_published'))
                                     ->helperText(__('resources/page.publish_settings_description'))
@@ -86,6 +95,12 @@ class PageResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('title')
                     ->label(__('resources/page.form.title'))
+                    ->prefix(function ($record): ?string {
+                        return $record->parent?->title ? '—— ' : null;
+                    })
+                    ->description(function ($record): ?string {
+                        return $record->parent?->title ? $record->parent?->title : null;
+                    }, position: 'above')
                     ->color('primary')
                     ->searchable()
                     ->sortable(),
@@ -97,7 +112,7 @@ class PageResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('published_at')
                     ->label(__('resources/post.form.published_at'))
-                    ->description(fn ($record): string => $record->published_at?->diffForHumans() ?? null)
+                    ->description(fn ($record): ?string => $record->published_at?->diffForHumans() ?? null)
                     ->datetime()
                     ->sortable(),
             ])

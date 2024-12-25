@@ -25,6 +25,7 @@ class Page extends Model implements HasMedia, MenuPanelable
         'title',
         'slug',
         'content',
+        'parent_id',
         'author_id',
         'is_published',
         'published_at',
@@ -58,5 +59,10 @@ class Page extends Model implements HasMedia, MenuPanelable
     public function author()
     {
         return $this->belongsTo(User::class, 'author_id');
+    }
+
+    public function parent()
+    {
+        return $this->belongsTo(Page::class, 'parent_id');
     }
 }

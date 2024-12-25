@@ -110,7 +110,7 @@ class PostResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('published_at')
                     ->label(__('resources/post.form.published_at'))
-                    ->description(fn ($record): string => $record->published_at?->diffForHumans() ?? null)
+                    ->description(fn ($record): ?string => $record->published_at?->diffForHumans() ?? null)
                     ->datetime()
                     ->sortable(),
             ])

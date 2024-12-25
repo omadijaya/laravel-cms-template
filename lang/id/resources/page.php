@@ -18,6 +18,7 @@ return [
         'featured_image' => 'Gambar Unggulan',
         'featured_image_help_text' => 'Gambar ini akan digunakan sebagai gambar utama halaman.',
         'author' => 'Penulis',
+        'parent_page' => 'Halaman Induk',
     ],
 
     'settings_label' => 'Pengaturan Halaman',
