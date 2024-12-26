@@ -3,7 +3,9 @@
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
 
-Route::redirect('/', '/login'); // FIXME: Show landing page
+Route::redirect('/', '/dashboard/login'); // FIXME: Show landing page
+
+Route::redirect('/login', '/dashboard/login'); // Redirect to login page
 
 // Post Route
 Route::get('/berita', [FrontendController::class, 'posts'])->name('fe.posts');
