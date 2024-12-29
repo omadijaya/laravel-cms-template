@@ -879,16 +879,16 @@
         },
         {
             "name": "datlechin/filament-menu-builder",
-            "version": "v0.6.0",
+            "version": "v0.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/datlechin/filament-menu-builder.git",
-                "reference": "6859270f54f218e451089549b90a7bf9fe521291"
+                "reference": "a20767931ddc06a8d365d16420c2c2fa374412d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/datlechin/filament-menu-builder/zipball/6859270f54f218e451089549b90a7bf9fe521291",
-                "reference": "6859270f54f218e451089549b90a7bf9fe521291",
+                "url": "https://api.github.com/repos/datlechin/filament-menu-builder/zipball/a20767931ddc06a8d365d16420c2c2fa374412d1",
+                "reference": "a20767931ddc06a8d365d16420c2c2fa374412d1",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-10T05:30:20+00:00"
+            "time": "2024-12-27T04:21:24+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -12624,12 +12624,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
