@@ -879,16 +879,16 @@
         },
         {
             "name": "datlechin/filament-menu-builder",
-            "version": "v0.6.2",
+            "version": "v0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/datlechin/filament-menu-builder.git",
-                "reference": "a20767931ddc06a8d365d16420c2c2fa374412d1"
+                "reference": "cb45ccc610e7c9d2d033e7dc547072dabb5cb4d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/datlechin/filament-menu-builder/zipball/a20767931ddc06a8d365d16420c2c2fa374412d1",
-                "reference": "a20767931ddc06a8d365d16420c2c2fa374412d1",
+                "url": "https://api.github.com/repos/datlechin/filament-menu-builder/zipball/cb45ccc610e7c9d2d033e7dc547072dabb5cb4d4",
+                "reference": "cb45ccc610e7c9d2d033e7dc547072dabb5cb4d4",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-27T04:21:24+00:00"
+            "time": "2025-01-14T03:38:36+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
