@@ -5506,34 +5506,34 @@
         },
         {
             "name": "ralphjsmit/laravel-filament-seo",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralphjsmit/laravel-filament-seo.git",
-                "reference": "db0afcd2a1e320e032badb70940dce7aedacc373"
+                "reference": "bcbdb11d29098f162b9630aaac3e57f0bea53807"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralphjsmit/laravel-filament-seo/zipball/db0afcd2a1e320e032badb70940dce7aedacc373",
-                "reference": "db0afcd2a1e320e032badb70940dce7aedacc373",
+                "url": "https://api.github.com/repos/ralphjsmit/laravel-filament-seo/zipball/bcbdb11d29098f162b9630aaac3e57f0bea53807",
+                "reference": "bcbdb11d29098f162b9630aaac3e57f0bea53807",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^3.0",
-                "illuminate/contracts": "^9.52|^10.0|^11.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
                 "php": "^8.0",
-                "ralphjsmit/laravel-seo": "^1.6.2",
+                "ralphjsmit/laravel-seo": "^1.7",
                 "spatie/laravel-package-tools": "^1.9.2"
             },
             "require-dev": {
                 "doctrine/dbal": "^3.8",
                 "nesbot/carbon": "^2.66|^3.0",
-                "nunomaduro/collision": "^6.1|^7.0|^8.0",
-                "orchestra/testbench": "^7.0|^8.0|^9.0",
-                "pestphp/pest": "^1.21|^2.0",
-                "pestphp/pest-plugin-laravel": "^1.1|^2.0",
-                "phpunit/phpunit": "^9.5|^10.5",
-                "spatie/laravel-ray": "^1.26"
+                "nunomaduro/collision": "^7.0|^8.0|^9.0",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.0",
+                "pestphp/pest-plugin-laravel": "^2.0|^3.0",
+                "phpunit/phpunit": "^10.5|^11.5",
+                "spatie/laravel-ray": "^1.39"
             },
             "type": "library",
             "extra": {
@@ -5569,40 +5569,40 @@
             ],
             "support": {
                 "issues": "https://github.com/ralphjsmit/laravel-filament-seo/issues",
-                "source": "https://github.com/ralphjsmit/laravel-filament-seo/tree/1.4.0"
+                "source": "https://github.com/ralphjsmit/laravel-filament-seo/tree/1.5.0"
             },
-            "time": "2024-08-30T10:38:24+00:00"
+            "time": "2025-02-25T18:18:57+00:00"
         },
         {
             "name": "ralphjsmit/laravel-helpers",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralphjsmit/laravel-helpers.git",
-                "reference": "840b4979a92c7b676d25f56430823f12481f2914"
+                "reference": "85f42d56a632b5e7edd60460cf8163b8f7506771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralphjsmit/laravel-helpers/zipball/840b4979a92c7b676d25f56430823f12481f2914",
-                "reference": "840b4979a92c7b676d25f56430823f12481f2914",
+                "url": "https://api.github.com/repos/ralphjsmit/laravel-helpers/zipball/85f42d56a632b5e7edd60460cf8163b8f7506771",
+                "reference": "85f42d56a632b5e7edd60460cf8163b8f7506771",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.4",
-                "illuminate/contracts": "^8.73|^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
                 "php": "^8.0",
                 "spatie/laravel-package-tools": "^1.9.2"
             },
             "require-dev": {
                 "livewire/livewire": "^2.9|^3.4",
                 "nesbot/carbon": "^2.66|^3.0",
-                "nunomaduro/collision": "^5.10|^6.1|^7.0|^8.0",
-                "orchestra/testbench": "^6.22|^7.0|^8.0|^9.0",
-                "pestphp/pest": "^1.21|^2.34",
-                "pestphp/pest-plugin-laravel": "^1.1|^2.3",
-                "phpunit/phpunit": "^9.5|^10.5",
+                "nunomaduro/collision": "^7.0|^8.0",
+                "orchestra/testbench": "^8.0|^9.0|^10.0",
+                "pestphp/pest": "^2.34|^3.7",
+                "pestphp/pest-plugin-laravel": "^2.3|^3.1",
+                "phpunit/phpunit": "^10.5|^11.5",
                 "spatie/invade": "^1.0|^2.0",
-                "spatie/laravel-ray": "^1.26"
+                "spatie/laravel-ray": "^1.39"
             },
             "type": "library",
             "extra": {
@@ -5645,40 +5645,40 @@
             ],
             "support": {
                 "issues": "https://github.com/ralphjsmit/laravel-helpers/issues",
-                "source": "https://github.com/ralphjsmit/laravel-helpers/tree/1.9.0"
+                "source": "https://github.com/ralphjsmit/laravel-helpers/tree/1.10.0"
             },
-            "time": "2024-03-14T08:30:30+00:00"
+            "time": "2025-02-25T17:18:51+00:00"
         },
         {
             "name": "ralphjsmit/laravel-seo",
-            "version": "1.6.4",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ralphjsmit/laravel-seo.git",
-                "reference": "22bb096141f9d3d76cf4dc85e6b6e4e30d7f53d5"
+                "reference": "209e92d795469e3865eaee5da29f663e3c25aa6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ralphjsmit/laravel-seo/zipball/22bb096141f9d3d76cf4dc85e6b6e4e30d7f53d5",
-                "reference": "22bb096141f9d3d76cf4dc85e6b6e4e30d7f53d5",
+                "url": "https://api.github.com/repos/ralphjsmit/laravel-seo/zipball/209e92d795469e3865eaee5da29f663e3c25aa6f",
+                "reference": "209e92d795469e3865eaee5da29f663e3c25aa6f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
                 "php": "^8.0",
-                "ralphjsmit/laravel-helpers": "^1.9",
+                "ralphjsmit/laravel-helpers": "^1.10",
                 "spatie/laravel-package-tools": "^1.9.2"
             },
             "require-dev": {
                 "laravel/pint": "^1.16",
                 "nesbot/carbon": "^2.66|^3.0",
-                "nunomaduro/collision": "^5.10|^6.0|^7.0|^8.0",
-                "orchestra/testbench": "^7.0|^8.0|^9.0",
-                "pestphp/pest": "^1.21|^2.0",
-                "pestphp/pest-plugin-laravel": "^1.1|^2.0",
-                "phpunit/phpunit": "^9.5|^10.5",
-                "spatie/laravel-ray": "^1.26",
-                "spatie/pest-plugin-test-time": "^1.0|^2.0"
+                "nunomaduro/collision": "^7.0|^8.0|^9.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^2.0|^3.0",
+                "pestphp/pest-plugin-laravel": "^2.0|^3.0",
+                "phpunit/phpunit": "^10.5|^11.5",
+                "spatie/laravel-ray": "^1.39",
+                "spatie/pest-plugin-test-time": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -5720,9 +5720,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ralphjsmit/laravel-seo/issues",
-                "source": "https://github.com/ralphjsmit/laravel-seo/tree/1.6.4"
+                "source": "https://github.com/ralphjsmit/laravel-seo/tree/1.7.0"
             },
-            "time": "2024-12-06T19:44:54+00:00"
+            "time": "2025-02-25T18:11:33+00:00"
         },
         {
             "name": "ramsey/collection",
@@ -6414,27 +6414,27 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "8332205b90d17164913244f4a8e13ab7e6761d29"
+                "reference": "1c9c30ac6a6576b8d15c6c37b6cf23d748df2faa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/8332205b90d17164913244f4a8e13ab7e6761d29",
-                "reference": "8332205b90d17164913244f4a8e13ab7e6761d29",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/1c9c30ac6a6576b8d15c6c37b6cf23d748df2faa",
+                "reference": "1c9c30ac6a6576b8d15c6c37b6cf23d748df2faa",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "illuminate/contracts": "^9.28|^10.0|^11.0|^12.0",
                 "php": "^8.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^7.7|^8.0|^9.0",
-                "pestphp/pest": "^1.22|^2",
-                "phpunit/phpunit": "^9.5.24|^10.5",
+                "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^1.23|^2.1|^3.1",
+                "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
                 "spatie/pest-plugin-test-time": "^1.1|^2.2"
             },
             "type": "library",
@@ -6462,7 +6462,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.18.0"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.19.0"
             },
             "funding": [
                 {
@@ -6470,7 +6470,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-30T13:13:39+00:00"
+            "time": "2025-02-06T14:58:20+00:00"
         },
         {
             "name": "spatie/laravel-permission",
