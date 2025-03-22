@@ -365,21 +365,21 @@
         },
         {
             "name": "blendbyte/filament-title-with-slug",
-            "version": "v1.0.9",
+            "version": "v1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blendbyte/filament-title-with-slug.git",
-                "reference": "7df29526504f2a75f39fed940c24d57ce90869be"
+                "reference": "6bdf7313bbd270abd41fe5d79f4f0d232aea9bcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blendbyte/filament-title-with-slug/zipball/7df29526504f2a75f39fed940c24d57ce90869be",
-                "reference": "7df29526504f2a75f39fed940c24d57ce90869be",
+                "url": "https://api.github.com/repos/blendbyte/filament-title-with-slug/zipball/6bdf7313bbd270abd41fe5d79f4f0d232aea9bcd",
+                "reference": "6bdf7313bbd270abd41fe5d79f4f0d232aea9bcd",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^3.0",
-                "illuminate/contracts": "^10.0|^11.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0",
                 "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.13.0"
             },
@@ -437,9 +437,9 @@
                 "tailwindcss"
             ],
             "support": {
-                "source": "https://github.com/blendbyte/filament-title-with-slug/tree/v1.0.9"
+                "source": "https://github.com/blendbyte/filament-title-with-slug/tree/v1.0.10"
             },
-            "time": "2024-10-13T10:37:05+00:00"
+            "time": "2025-03-15T05:01:19+00:00"
         },
         {
             "name": "brick/math",
