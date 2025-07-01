@@ -1842,16 +1842,16 @@
         },
         {
             "name": "filament/spatie-laravel-tags-plugin",
-            "version": "v3.3.4",
+            "version": "v3.3.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-tags-plugin.git",
-                "reference": "0c7b2c39a62b6f0ca752258d2dedc46c85706828"
+                "reference": "7763c2bab92c619cdd9294c69004f89e136c0afc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-tags-plugin/zipball/0c7b2c39a62b6f0ca752258d2dedc46c85706828",
-                "reference": "0c7b2c39a62b6f0ca752258d2dedc46c85706828",
+                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-tags-plugin/zipball/7763c2bab92c619cdd9294c69004f89e136c0afc",
+                "reference": "7763c2bab92c619cdd9294c69004f89e136c0afc",
                 "shasum": ""
             },
             "require": {
@@ -1875,7 +1875,7 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2025-02-25T08:19:03+00:00"
+            "time": "2025-05-19T07:27:08+00:00"
         },
         {
             "name": "filament/support",
